@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../../../..">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../pylint_datetime/">
+        <link rel="next" href="../../../../CONTRIBUTING/">
       
       <link rel="icon" href="../../../../logo.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
@@ -251,18 +251,11 @@
   
   
   
-    
-
-  
-  
-  
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         API Reference
       </a>
     </li>
-  
-
   
 
   
@@ -415,10 +408,16 @@
       
       
       
-        <label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
-          lib
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">lib</a>
+          
+            <label for="__nav_2_1_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_1_1">
@@ -594,20 +593,6 @@
           
         </ul>
       </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../pylint_datetime/" class="md-nav__link">
-        pylint_datetime
-      </a>
     </li>
   
 
@@ -1020,7 +1005,7 @@
 <span class="normal"><a href="#__codelineno-0-180">180</a></span>
 <span class="normal"><a href="#__codelineno-0-181">181</a></span>
 <span class="normal"><a href="#__codelineno-0-182">182</a></span>
-<span class="normal"><a href="#__codelineno-0-183">183</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="k">class</span> <span class="nc">DatetimeChecker</span><span class="p">(</span><span class="n">BaseChecker</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-183">183</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="k">class</span> <span class="nc">DatetimeChecker</span><span class="p">(</span><span class="n">BaseChecker</span><span class="p">):</span>  <span class="c1"># type: ignore</span>
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;class for custom pylint checker.&quot;&quot;&quot;</span>
 </span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>
 </span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="n">__implements__</span> <span class="o">=</span> <span class="n">IAstroidChecker</span>
@@ -1034,9 +1019,9 @@
 </span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a>            <span class="s2">&quot;timedelta() called without keyword arguments.&quot;</span><span class="p">,</span>
 </span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a>        <span class="p">),</span>
 </span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a>        <span class="s2">&quot;W9998&quot;</span><span class="p">:</span> <span class="p">(</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a>            <span class="s1">&#39;Function call to &quot;</span><span class="si">%s</span><span class="s1">&quot; should be called with a timezone argument&#39;</span><span class="p">,</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a>            <span class="s1">&#39;Function call to &quot;</span><span class="si">%s</span><span class="s1">&quot;/&quot;replace&quot; should be called with a timezone argument&#39;</span><span class="p">,</span>
 </span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a>            <span class="s2">&quot;timezone-no-argument&quot;</span><span class="p">,</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>            <span class="s1">&#39;Function call to &quot;</span><span class="si">%s</span><span class="s1">&quot; should be called with a timezone argument&#39;</span><span class="p">,</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>            <span class="s1">&#39;Function call to &quot;</span><span class="si">%s</span><span class="s1">&quot;/&quot;replace&quot; should be called with a timezone argument&#39;</span><span class="p">,</span>
 </span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a>        <span class="p">),</span>
 </span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a>        <span class="s2">&quot;W9997&quot;</span><span class="p">:</span> <span class="p">(</span>
 </span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a>            <span class="s1">&#39;Function call to &quot;</span><span class="si">%s</span><span class="s1">&quot; can only produce naive objects&#39;</span><span class="p">,</span>
