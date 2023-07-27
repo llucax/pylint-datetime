@@ -6,9 +6,8 @@
 
 ## Introduction
 
-checker to ensure correct datetime usage with aware objects in datetime module
-
-TODO(cookiecutter): Improve the README file
+Checker to ensure correct datetime usage with aware objects in datetime module instead of naive objects, there are exceptions
+for the specific cases check the code
 
 ## Contributing
 

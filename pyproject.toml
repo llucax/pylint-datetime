@@ -15,7 +15,7 @@ description = "checker to ensure correct datetime usage with aware objects in da
 readme = "README.md"
 license = { text = "MIT" }
 keywords = ["frequenz", "python", "lib", "library", "pylint-datetime", ""]
-classifiers = [ # TODO(cookiecutter): Remove and add more if appropriate
+classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
@@ -25,7 +25,7 @@ classifiers = [ # TODO(cookiecutter): Remove and add more if appropriate
   "Typing :: Typed",
 ]
 requires-python = ">= 3.11, < 4"
-dependencies = [ # TODO(cookiecutter): Remove and add more if appropriate
+dependencies = [
   "typing-extensions >= 4.5.0, < 5",
 ]
 dynamic = ["version"]
@@ -34,7 +34,7 @@ dynamic = ["version"]
 name = "Frequenz Energy-as-a-Service GmbH"
 email = "floss@frequenz.com"
 
-[project.optional-dependencies] # TODO(cookiecutter): Remove and add more if appropriate
+[project.optional-dependencies]
 dev-docstrings = [
   "pydocstyle == 6.3.0",
   "darglint == 1.8.1",

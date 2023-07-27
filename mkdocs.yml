@@ -8,7 +8,6 @@ site_author: "Frequenz Energy-as-a-Service GmbH"
 copyright: "Copyright © 2023 Frequenz Energy-as-a-Service GmbH"
 repo_name: "frequenz-pylint-datetime-python"
 repo_url: "https://github.com/frequenz-floss/frequenz-pylint-datetime-python"
-# TODO(cookiecutter): "main" is the GitHub repo default branch, you might want to update it
 # if the project uses a different default branch.
 edit_uri: "edit/main/docs/"
 strict: true  # Treat warnings as errors
@@ -16,7 +15,6 @@ strict: true  # Treat warnings as errors
 # Build directories
 theme:
   name: "material"
-  # TODO(cookiecutter): You might want to change the logo, the file is located in "docs/"
   logo: logo.png
   favicon: logo.png
   language: en
@@ -49,7 +47,7 @@ theme:
       name: Switch to light mode
 
 extra:
-  social:  # TODO(cookiecutter): You probably want to update the links
+  social:
   - icon: fontawesome/brands/github
     link: https://github.com/frequenz-floss
   - icon: fontawesome/brands/linkedin
@@ -106,10 +104,11 @@ plugins:
             show_root_members_full_path: true
             show_source: true
           import:
-            # TODO(cookiecutter): You might want to add other external references here
             # See https://mkdocstrings.github.io/python/usage/#import for details
             - https://docs.python.org/3/objects.inv
             - https://typing-extensions.readthedocs.io/en/stable/objects.inv
+            - https://pylint.readthedocs.io/projects/astroid/en/latest/objects.inv
+            - https://pylint.pycqa.org/en/latest/objects.inv
   - search
   - section-index
 
