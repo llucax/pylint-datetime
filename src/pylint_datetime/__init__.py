@@ -10,7 +10,7 @@ from pylint import checkers, lint
 # if the specified timezone is None, still allowed although they produce naive objects
 
 
-class DatetimeChecker(checkers.BaseChecker):
+class DatetimeChecker(checkers.BaseChecker):  # type: ignore[misc]
     """class for custom pylint checker."""
 
     name = "pylint-datetime"

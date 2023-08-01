@@ -57,10 +57,7 @@ dev-mypy = [
   # For checking the noxfile, docs/ script, and tests
   "frequenz-pylint-datetime[dev-mkdocs,dev-noxfile,dev-pytest]",
 ]
-dev-noxfile = [
-  "nox == 2023.4.22",
-  "frequenz-repo-config[lib] == 0.4.0",
-]
+dev-noxfile = ["nox == 2023.4.22", "frequenz-repo-config[lib] == 0.4.0"]
 dev-pylint = [
   "pylint == 2.17.5",
   # For checking the noxfile, docs/ script, and tests
@@ -115,7 +112,14 @@ asyncio_mode = "auto"
 required_plugins = ["pytest-asyncio", "pytest-mock"]
 
 [[tool.mypy.overrides]]
-module = ["async_solipsism", "async_solipsism.*"]
+module = [
+  "async_solipsism",
+  "async_solipsism.*",
+  "astroid",
+  "astroid.*",
+  "pylint",
+  "pylint.*",
+]
 ignore_missing_imports = true
 
 [tool.setuptools_scm]

@@ -4,8 +4,8 @@
 """Tests for the frequenz.pylint_datetime package."""
 from typing import Any
 
-import astroid  # type: ignore
-import pylint.testutils  # type: ignore
+import astroid
+from pylint import testutils
 
 from pylint_datetime import DatetimeChecker
 
@@ -15,7 +15,7 @@ from pylint_datetime import DatetimeChecker
 # maybe this needs to be tested more thoroughly
 
 
-class TestDatetimeChecker(pylint.testutils.CheckerTestCase):  # type: ignore
+class TestDatetimeChecker(testutils.CheckerTestCase):  # type: ignore
     """Test class for DatetimeChecker."""
 
     CHECKER_CLASS = DatetimeChecker
@@ -34,7 +34,7 @@ class TestDatetimeChecker(pylint.testutils.CheckerTestCase):  # type: ignore
             args: arguments to pass to the message.
         """
         with self.assertAddsMessages(
-            pylint.testutils.MessageTest(
+            testutils.MessageTest(
                 msg_id=msg_id,
                 node=node,
                 args=args,
@@ -59,7 +59,7 @@ class TestDatetimeChecker(pylint.testutils.CheckerTestCase):  # type: ignore
             args: arguments to pass to the message.
         """
         with self.assertAddsMessages(
-            pylint.testutils.MessageTest(
+            testutils.MessageTest(
                 msg_id=msg_id,
                 node=node if node2 is None else node2,
                 args=args,
